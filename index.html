@@ -23,17 +23,19 @@
       main {
         width: 98vw;
       }
-      .container {
+      body {
         background: url(./assets/bg-blue-frame.png), url(./assets/bg-grey.png);
         width: 100%;
-        height: 1000px;
+        height: auto;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top top;
+        z-index: 100;
+        /* overflow-x: hidden; */
         /* padding: 30px; */
-        margin: 15px;
+        /* margin: 10px; */
       }
-/* 
+      /* 
        .mainWrapper {
         width: 100%;
         padding: 50px 70px;
@@ -113,73 +115,186 @@
       .groupImage img{
         width: 100%;
       } */
-      .mainWrapper{
+      .mainWrapper {
         padding: 20px 20px;
+        /* overflow: hidden; */
       }
-      .topLogos{
+      .topLogos {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 10px;
       }
 
-      .topLogos img{
+      .topLogos img {
         width: 50px;
       }
-      .topLogos img:first-child{
+      .topLogos img:first-child {
         width: 150px;
       }
 
-      .headingWrapper{
+      .headingWrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
       }
 
-      .date{
+      .date {
         /* align-self: flex-end; */
         font-size: 2.5vw;
         font-weight: bold;
         margin-top: 18px;
       }
 
-      .topText h1{
+      .topText h1 {
         font-size: 3.2vw;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
       }
 
-      .topText p{
+      .topText p {
         font-size: 2.3vw;
         line-height: 3.9vw;
       }
 
-      .topText p span{
+      .topText p span {
         position: relative;
       }
 
-      .topText p span img{
+      .topText p span img {
         width: 70px;
         position: absolute;
         left: 0;
         bottom: -5px;
       }
 
-      .man{
+      .man {
         width: 100%;
         height: 200px;
         background: url(./assets/man.jpg);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
-      .man img{
-        width: 50px;
+      .man img {
+        width: 70px;
       }
 
       .groupImage {
+        width: 100%;
+      }
+
+      .groupImage img {
+        width: 100%;
+      }
+
+      .callToAction > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .callToAction p {
+        font-size: 2.2vw;
+        line-height: 3.2vw;
+      }
+      .callToAction > p {
+        margin-top: 10px;
+      }
+
+      .callToAction button {
+        padding: 5px 20px;
+        border: none;
+        border-radius: 50px;
+        border: 1px solid #000;
+        background: #ffba00;
+        font-size: 10px;
+      }
+
+      .qrSign {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
         display: none;
       }
+
+      .qrSign > div {
+        display: flex;
+        /* width: 100%; */
+      }
+
+      .qrSign > div img:first-child {
+        width: 90px;
+      }
+      .qrSign > div img:last-child {
+        width: 50px;
+        height: 25px;
+        margin-left: 10px;
+        margin-top: -10px;
+      }
+
+      .qrSign > img {
+        width: 100px;
+        height: 50px;
+        margin-right: -90px;
+      }
+
+      .dottedLine {
+        width: 100vw;
+        z-index: 90;
+      }
+      .dottedLine img {
+        width: 100%;
+      }
+
+      .mapStand {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* height: 170px; */
+        width: 100vw;
+        /* overflow: hidden; */
+      }
+
+      .mapRight,
+      .mapLeft {
+        position: relative;
+      }
+      .mapRight img:first-child {
+        width: 30vw;
+        position: absolute;
+        left: 0px;
+        top: -30px;
+      }
+      .mapRight img:last-child {
+        width: 90vw;
+        height: 140px;
+      }
+
+      .mapLeft img{
+        width: 100px;
+        overflow: hidden;
+      }
+
+      .footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .footer img{
+        width: 150px;
+        /* height: 50px; */
+        margin-bottom: -65px;
+      }
+
+
+
 
     </style>
     <main>
@@ -202,22 +317,77 @@
             </div>
             <p>
               Visit us there and discover our product portfolio-including
-              something <span><img src="./assets/linie-text-completely_new.png" alt="">completely new</span> among the peripherals-and
-              discuss it with our product managers and decision-makers on the
-              go.
+              something
+              <span
+                ><img
+                  src="./assets/linie-text-completely_new.png"
+                  alt=""
+                />completely new</span
+              >
+              among the peripherals-and discuss it with our product managers and
+              decision-makers on the go.
             </p>
           </div>
 
           <div class="imagesWrapper">
-            <a href="https://www.youtube.com/watch?v=-US9ZZpfTBE" target="_blank">
+            <a
+              href="https://www.youtube.com/watch?v=-US9ZZpfTBE"
+              target="_blank"
+            >
               <div class="man">
                 <img src="./assets/play-icon.png" alt="" />
               </div>
             </a>
             <div class="groupImage">
-              <img src="./assets/Target-group_photo.png" alt="">
+              <img src="./assets/Target-group_photo.png" alt="" />
             </div>
-           </div>
+          </div>
+
+          <div class="callToAction">
+            <div>
+              <p>
+                Most importantly, we'll be there to talk business-click <br />
+                the button to book a meeting with our team!
+              </p>
+              <button>BOOK A MEETING</button>
+            </div>
+            <p>
+              You're also welcome to drop by our stand, hang out, take part in a
+              raffle and enjoy some <br />themed soft drinks:)
+            </p>
+            <div class="qrSign">
+              <div>
+                <img src="./assets/See-you-there.png" alt="" />
+                <img
+                  src="./assets/hand-drawn-arrow-05-RGB-blue-DGN-0042.png"
+                  alt=""
+                />
+              </div>
+              <img
+                src="./assets/endorfy-abrasion-entity-RGB-black-DGN-0010.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="dottedLine">
+            <img src="./assets/dots-below.png" alt="" />
+          </div>
+          <div class="mapStand">
+            <div class="mapLeft">
+              <img
+                src="./assets/endorfy-globe-simple-stamp-RGB-black-DGN-001Q.png"
+                alt=""
+                class="globe"
+              />
+            </div>
+            <div class="mapRight">
+              <img src="./assets/map-stand-number.png" alt="" />
+              <img src="./assets/map-stand.png" alt="" />
+            </div>
+          </div>
+          <div class="footer">
+            <img src="./assets/endorfy-slogan-RGB-yellow-with-white.png" alt="">
+          </div>
         </div>
       </div>
     </main>
