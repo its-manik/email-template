@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: Main;
+        src: url(./fonts/Northwell.ttf);
+      }
+      body {
+        font-family: arial;
+        overflow-x: hidden;
+      }
+      main {
+        width: 98vw;
+      }
+      .container {
+        background: url(./assets/bg-blue-frame.png), url(./assets/bg-grey.png);
+        width: 100%;
+        height: 1000px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top top;
+        /* padding: 30px; */
+        margin: 15px;
+      }
+/* 
+       .mainWrapper {
+        width: 100%;
+        padding: 50px 70px;
+      }
+
+      .topLogos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .topLogos img:first-child {
+        width: 600px;
+      }
+      .topLogos img:last-child {
+        width: 300px;
+      }
+      .topText {
+        margin-top: 20px;
+      }
+      .headingWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .heading h1 {
+        font-size: 65px;
+        line-height: 85px;
+      }
+      .date {
+        font-size: 35px;
+        font-weight: bold;
+        align-self: flex-end;
+      }
+
+      .topText p {
+        margin-top: 50px;
+        font-size: 2.4vw;
+        line-height: 60px;
+        margin-bottom: 50px;
+      }
+
+      .topText p span {
+        position: relative;
+      }
+
+      .topText p span img {
+        width:320px;
+        height: auto;
+        top: 50px;
+        left: 0;
+        position: absolute;
+      }
+
+      .man {
+        background: url(./assets/man.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 900px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .man img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .groupImage{
+        width: 100%;
+      }
+
+      .groupImage img{
+        width: 100%;
+      } */
+      .mainWrapper{
+        padding: 20px 20px;
+      }
+      .topLogos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+
+      .topLogos img{
+        width: 50px;
+      }
+      .topLogos img:first-child{
+        width: 150px;
+      }
+
+      .headingWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .date{
+        /* align-self: flex-end; */
+        font-size: 2.5vw;
+        font-weight: bold;
+        margin-top: 18px;
+      }
+
+      .topText h1{
+        font-size: 3.2vw;
+        margin-bottom: 5px;
+      }
+
+      .topText p{
+        font-size: 2.3vw;
+        line-height: 3.9vw;
+      }
+
+      .topText p span{
+        position: relative;
+      }
+
+      .topText p span img{
+        width: 70px;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+      }
+
+      .man{
+        width: 100%;
+        height: 200px;
+        background: url(./assets/man.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .man img{
+        width: 50px;
+      }
+
+      .groupImage {
+        display: none;
+      }
+
+    </style>
+    <main>
+      <div class="container">
+        <div class="mainWrapper">
+          <div class="topLogos">
+            <img src="./assets/ENDORFY-rgb-logo-mark_black.png" alt="" />
+            <img src="./assets/compute.jpg" alt="" />
+          </div>
+
+          <div class="topText">
+            <div class="headingWrapper">
+              <div class="heading">
+                <h1><span>Endorfy</span> is coming</h1>
+                <h1>to Conputex Taipei 2024 and we can't wait!</h1>
+              </div>
+              <div class="date">
+                <span>2024 | 4-7 of June</span>
+              </div>
+            </div>
+            <p>
+              Visit us there and discover our product portfolio-including
+              something <span><img src="./assets/linie-text-completely_new.png" alt="">completely new</span> among the peripherals-and
+              discuss it with our product managers and decision-makers on the
+              go.
+            </p>
+          </div>
+
+          <div class="imagesWrapper">
+            <a href="https://www.youtube.com/watch?v=-US9ZZpfTBE" target="_blank">
+              <div class="man">
+                <img src="./assets/play-icon.png" alt="" />
+              </div>
+            </a>
+            <div class="groupImage">
+              <img src="./assets/Target-group_photo.png" alt="">
+            </div>
+           </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
